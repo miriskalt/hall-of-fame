@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girls Day CAU</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!--  Navigation -->
+    <nav>
+        <img src="../images/girls_day_logo.jpg" alt="girls_day_logo" />
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="../index.html">Wilkommen</a></li>
+                <li><a class="active" href="aufg1.html">Aufgabenrunde 1</a></li>
+                <li><a href="aufg2.html">Aufgabenrunde 2</a></li>
+                <li><a href="aufg3.html">Aufgabenrunde 3</a></li>
+                <li><a href="vorstellungen.html">Vorstellungsvideos</a></li>
+
+            </ul>
+            <i id="menu-btn" class="fas fa-bars"></i>
+            <!-- <img id="menu-btn" src="./images/menu.jpg" alt="Menu" /> -->
+
+        </div>
+    </nav>
+
+
+    <!-- Home  -->
+
+    <section id="aufgaben-container">
+        <div class="aufgaben blogpost">
+            <div class="post">
+                <img src="../images/onlinepython.webp" alt="online-python">
+                <h3>Starte jetzt direkt mit der Programmierumgebung online-python</h3>
+                <p>Wir fangen jetzt direkt an mit dem Programmieren und das ohne Installationen oder Einrichtung auf
+                    euren Computern.</p>
+                <p>Die Webseite online-python.com bietet uns die Möglichkeit Python Code zu schreiben und direkt
+                    auszuführen. Es gibt dabei 3 Felder, die wir verwenden können.</p>
+                <img src="../images/op_home.png" alt="Homepage Online Python">
+                <p>In das obere Feld, welches unter dem Reiter "main.py" beginnt wird das Skript (Programm)
+                    geschrieben. Darunter befindet sich ein grünes Feld mit der Aufschrift "Run", mit welchem das
+                    Progamm gestartet wird. In dem unteren Feld, einem Terminal oder auch als Kommando-Zeile bekannt, kann
+                    der Computer mit uns kommunizieren. Hier werden Ausgaben getätigt und auch Eingaben von uns an den
+                    Computer getätigt.</p>
+                <br><br>
+                <code language="pyhton">
+                    def summe(a,b):
+                        print(a+b)
+                </code>
+                <p>Text Text Text aus Folien</p>
+
+                <a href="variablen.html"> Zu den ersten Programmierschritten</a>
+            </div>
+
+    </section>
+
+
+
+    <footer>
+        <div class="footer-col">
+            <h3>Jetzt bist du dran</h3>
+            <li>Aufgabe 1</li>
+            <li>Aufgabe 2</li>
+            <li>Aufgabe 3</li>
+
+        </div>
+        <div class="footer-col">
+            <h3>Andere Links</h3>
+            <li>Homepage der Arbeitsgruppe</li>
+            <li>Vorstellung des Teams der Arbeitsgruppe</li>
+            <li>Impressum</li>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright ©2023 All rights reserved | This website is made by ISDM CAU Kiel </p>
+            <div class="pro-links">
+                <i class="fas fa-link"></i>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        $('#menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active');
+        });
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active');
+        });
+    </script>
+</body>
+
+</html>
