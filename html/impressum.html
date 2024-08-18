@@ -20,12 +20,12 @@
         <div class="navigation">
             <ul>
                 <i id="menu-close" class="fas fa-times"></i>
-                <li><a href="../index.html">Wilkommen</a></li>
-                <li><a href="aufg1.html">Aufgabenrunde 1</a></li>
-                <li><a href="aufg2.html">Aufgabenrunde 2</a></li>
-                <li><a href="aufg3.html">Aufgabenrunde 3</a></li>
-                <li><a href="vorstellungen.html">Vorstellungsvideos</a></li>
-
+                <li><a  href="../index.html">Home</a></li>
+                <li><a class="active" href="./WS23-24.html">Winter Semester 2024</a></li>
+                <li><a  href="./SS2023.html">Summer Semester 2023</a></li>
+                <li><a href="./WS22-23.html">Winter Semester 2023</a></li>
+                <li><a href="./SS2022.html">Summer Semester 2022</a></li>
+                <li><a href="./vorstellungen.html">Meet the Tutors</a></li>
             </ul>
             <i id="menu-btn" class="fas fa-bars"></i>
             <!-- <img id="menu-btn" src="./images/menu.jpg" alt="Menu" /> -->
@@ -51,30 +51,40 @@
 
     </section>
 
-</body>
 
-<footer>
-    <div class="footer-col">
-        <h3>Theorie Texte und Aufgabenanleitungen</h3>
-        <li><a href="html/aufg1.html">Aufgabenrunde 1</a></li>
-        <li><a href="html/aufg2.html">Aufgabenrunde 2</a></li>
-        <li><a href="html/aufg3.html">Aufgabenrunde 3</a></li>
-
-    </div>
-    <div class="footer-col">
-        <h3>Andere Links</h3>
-        <li><a href="https://www.isdm.informatik.uni-kiel.de/de">Homepage der Arbeitsgruppe</li>
-        <li><a href="html/vorstellungen.html">Unsere Arbeitsgruppe stellt sich vor</a></li>
-        <li><a href="html/impressum.html">Impressum</a></li>
-
-    </div>
-    <div class="copyright">
-        <p>Copyright ©2023 All rights reserved | This website is made by ISDM CAU Kiel </p>
-        <div class="pro-links">
-            <i class="fas fa-link"></i>
+    <footer>
+        <div class="footer-col">
+            <h3>View all available projects of previous semesters</h3>
+            <li><a href="./WS23-24.html">Winter Semester 2024</a></li>
+            <li><a href="./SS2023.html">Summer Semster 2023</a></li>
+            <li><a href="./WS22-23.html">Winter Semester 2023</a></li>
+            <li><a href="./SS2022.html">Summer Semester 2022</a></li>
+            <li><a href="./vorstellungen.html">Meet the Tutors</a></li>
         </div>
-
-    </div>
-</footer>
+        <div class="footer-col">
+            <h3>Other links</h3>
+            <li><a href="https://www.isdm.informatik.uni-kiel.de/de">Homepage of the Working Group at Kiel University</li>
+            <li><a href="html/vorstellungen.html">Meet the tutors behind the Data Science Project</a></li>
+            <li><a href="./impressum.html">Impressum</a></li>
+    
+        </div>
+        <div class="copyright">
+            <p>Copyright ©2023 All rights reserved | This website is made by Mirjam Bayer on behalf of ISDM CAU Kiel </p>
+            <div class="pro-links">
+                <i class="fas fa-link"></i>
+            </div>
+    
+        </div>
+    </footer>
+    
+    <script>
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active');
+        });
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active');
+        });
+    </script>
+    </body>
 
 </html>

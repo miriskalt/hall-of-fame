@@ -12,7 +12,7 @@ body {
 h1 { 
     font-size: 2.5rem;
     font-weight: 700;
-    color: #049036;
+    color: #2472b3;
 }
 span {
     font-size: .9rem;
@@ -122,7 +122,7 @@ nav .navigation ul li a:hover {
 
 }
 
-#home a.blue {
+#home a.green {
     color: #ffff;
     background: #049036;
     transition: 0.3s ease;
@@ -131,7 +131,7 @@ nav .navigation ul li a:hover {
 
 }
 
-#home a.blue:hover {
+#home a.green:hover {
     color: #91a7c0;
     background: #ffff;
 }
@@ -254,7 +254,7 @@ nav .navigation ul li a:hover {
 
 .pro-links i {
     padding: 10px 13px;
-    border: 1px solid rgb(15, 15, 145);
+    border: 1px solid rgb(15, 76, 145);
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -433,14 +433,19 @@ footer .copyright .pro-links i:hover{
 
 #aufgaben-container .aufgaben {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px,1fr));
     gap: 2rem;
-    margin-top: 40px;
+    grid-row-gap: 50px; 
+    margin-top: 20px;
+    background-color: #817a7a00;
 }
+.row-border{
+    border-top: 2px solid gray;
+    }
 
 #aufgaben-container .aufgaben img {
-    height: 60%;
-    width: 100%;
+    height: 95%;
+    width: 130%;
     background-size: cover;
     position: center;
     margin-top: 30px;
@@ -449,24 +454,28 @@ footer .copyright .pro-links i:hover{
 
 
 #aufgaben-container .aufgaben .post h3 {
-    color:#61724f;
-    padding: 15px 0 10px 0;
+    color:#35458a;
+    text-align: center;
+    padding: 5px 0 5px 0;
 }
 
 #aufgaben-container .aufgaben .post p {
-    color:#4f6416;
-    padding-bottom: 20px;
+    color:#233481;
+    text-align: center;
+    padding-bottom: 2px;
 }
 
 #aufgaben-container .aufgaben .post a {
     text-decoration: none;
+    text-align: center;
     font-size: 0.9rem;
     font-weight: 600;
-    padding: 13px 35px;
+    padding: 13px 10px;
     margin: 15%;
     background-color: #233481;
     color: aliceblue;
     border-radius: 5px;
+    line-height: 45px;
 
 }
 
@@ -572,18 +581,18 @@ footer .copyright .pro-links i:hover{
 /* Poster images enlarge upon hover  */
 #rightImage
 {
-    height:750px;
-    float:left;
-    position:relative;
-    
+    height: 800px;;
+    width: 400px;
+    float:center;
+    position:left;
+    padding: 10%;   
 }
-#rightImage:hover img
+/*#rightImage:hover img USE For having poster spin around to show short text
 {
-    height: 1000px;
-    width: 750px;
+    
   
 }
-
+*
 /* Tablet Screen  */
 @media (max-width: 769px) {
     nav {
